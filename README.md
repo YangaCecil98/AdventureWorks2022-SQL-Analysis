@@ -1,4 +1,4 @@
-# AdventureWorks2022-SQL-Analysis
+# AdventureWorks2022 SQL Analysis
 
 ## Project Overview
 
@@ -43,9 +43,9 @@ Three core tables were selected for the main analysis:
 
 | Table                    | Description                     | Approx. Rows |
 | ------------------------ | ------------------------------- | -----------: |
-| Sales.SalesOrderHeader | Sales order-level information   |       31,465 |
-| Sales.SalesOrderDetail | Individual products/order lines |      121,317 |
-| Production.Product     | Product information             |          504 |
+| `Sales.SalesOrderHeader` | Sales order-level information   |       31,465 |
+| `Sales.SalesOrderDetail` | Individual products/order lines |      121,317 |
+| `Production.Product`     | Product information             |          504 |
 
 ### Table Grain
 
@@ -57,7 +57,7 @@ Understanding the grain of each table is central to the analysis.
 
 The primary relationship is:
 
-SalesOrderHeader → SalesOrderDetail → Production.Product
+`SalesOrderHeader` → `SalesOrderDetail` → `Production.Product`
 
 A single sales order can contain multiple order-detail records, while each order-detail record references a product.
 
@@ -185,7 +185,7 @@ The quartiles and IQR provide additional context around the large difference in 
 
 This project demonstrates practical use of:
 
-
+```text
 SELECT
 FROM
 WHERE
@@ -201,13 +201,13 @@ Common Table Expressions (CTEs)
 Window functions
 PERCENTILE_CONT
 PARTITION BY
-
+```
 
 A major focus of the project is understanding **data grain** and how it changes throughout an analysis.
 
 For example:
 
-
+```text
 Order Detail
 1 row = 1 order line
         ↓
@@ -220,13 +220,13 @@ Aggregation
         ↓
 Order Type
 1 row = Online / Non-online
+```
 
-
-
+---
 
 ## Project Structure
 
-
+```text
 AdventureWorks2022-SQL-Analysis/
 │
 ├── README.md
@@ -241,10 +241,10 @@ AdventureWorks2022-SQL-Analysis/
 │   └── 04_online_order_analysis.sql
 │
 └── PowerBI/
-    └── 
+    └──
+```
 
-
-
+---
 
 ## Tools & Technologies
 
