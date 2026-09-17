@@ -34,10 +34,8 @@ Important Analytical Distinction:
 ===============================================================================
 */
 
-
 USE AdventureWorks2022;
 GO
-
 
 /*=============================================================================
 1. COMPOSITION OF THE 50 HIGHEST-VALUE ORDERS
