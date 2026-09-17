@@ -1,5 +1,4 @@
 # AdventureWorks2022-SQL-Analysis
-# AdventureWorks2022 SQL Analysis
 
 ## Project Overview
 
