@@ -42,10 +42,8 @@ Important Analytical Distinction:
 ===============================================================================
 */
 
-
 USE AdventureWorks2022;
 GO
-
 
 /*=============================================================================
 1. AVERAGE ORDER VALUE BY ONLINE ORDER STATUS
